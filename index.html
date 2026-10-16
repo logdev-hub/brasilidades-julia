@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brasilidades | Cosmética natural brasileira</title>
+  <meta name="description" content="Cosméticos naturais com ingredientes da biodiversidade brasileira: cuidados para corpo, rosto, cabelos, fragrâncias e presentes. Frete grátis acima de R$199.">
+  <meta name="theme-color" content="#91241E">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Josefin+Sans:wght@300;400;600;700&family=Dosis:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="app-header"></div>
+
+  <main id="main">
+    <h1 class="sr-only">Brasilidades — cosmética natural brasileira</h1>
+
+    <!-- Banner principal -->
+    <section class="hero" data-hero aria-roledescription="carrossel" aria-label="Destaques">
+      <div class="hero__track">
+        <article class="hero__slide" style="--bg:#91241E" aria-roledescription="slide" aria-label="1 de 3"
+          data-scene='{"bg":"#91241E","c1":"#EA6404","c2":"#F8AD3F","leafColor":"#92BE25","product":"BR001"}'>
+          <div class="container hero__slide-inner">
+            <div class="hero__content">
+              <span class="hero__eyebrow">O ouro do Cerrado</span>
+              <h2 class="hero__title">Óleo Corporal Iluminador Buriti</h2>
+              <p class="hero__text">Sua pele com até +65% de glow e 24h de hidratação, com óleo de buriti rico em betacaroteno.¹</p>
+              <div class="hero__ctas">
+                <a class="btn btn--light" href="produto.html?id=BR001">Comprar agora</a>
+                <a class="btn btn--ghost-light" href="produtos.html?linha=buriti">Conheça a linha</a>
+              </div>
+              <p class="hero__note">¹ Teste de percepção com 60 voluntárias após 4 semanas de uso.</p>
+            </div>
+            <div class="hero__art" data-scene-target></div>
+          </div>
+        </article>
+        <article class="hero__slide" style="--bg:#3F2B2E" aria-roledescription="slide" aria-label="2 de 3"
+          data-scene='{"bg":"#3F2B2E","c1":"#D64C63","c2":"#FFB175","leafColor":"#64CE65","product":"BR072"}'>
+          <div class="container hero__slide-inner">
+            <div class="hero__content">
+              <span class="hero__eyebrow">Edição limitada</span>
+              <h2 class="hero__title">Novo Calendário Brasilidades</h2>
+              <p class="hero__text">24 presentes e um ritual de cuidados completo para você ou para quem você ama.</p>
+              <div class="hero__ctas">
+                <a class="btn btn--light" href="produto.html?id=BR072">Garanta o seu</a>
+                <a class="btn btn--ghost-light" href="produtos.html?cat=presentes">Ver presentes</a>
+              </div>
+            </div>
+            <div class="hero__art" data-scene-target></div>
+          </div>
+        </article>
+        <article class="hero__slide" style="--bg:#CC274E" aria-roledescription="slide" aria-label="3 de 3"
+          data-scene='{"bg":"#CC274E","c1":"#FB839B","c2":"#FFDF93","leafColor":"#92BE25","product":"BR010"}'>
+          <div class="container hero__slide-inner">
+            <div class="hero__content">
+              <span class="hero__eyebrow">Fragrância best-seller</span>
+              <h2 class="hero__title">Eau de Parfum Flor de Ipê</h2>
+              <p class="hero__text">Quando o ipê floresce, o Cerrado se pinta de rosa. Um floral luminoso, elegante e marcante.</p>
+              <div class="hero__ctas">
+                <a class="btn btn--light" href="produto.html?id=BR010">Descubra</a>
+                <a class="btn btn--ghost-light" href="produtos.html?cat=fragrancias">Todas as fragrâncias</a>
+              </div>
+            </div>
+            <div class="hero__art" data-scene-target></div>
+          </div>
+        </article>
+      </div>
+      <div class="hero__nav">
+        <button class="hero__arrow" type="button" data-hero-prev aria-label="Slide anterior"></button>
+        <div class="hero__dots" role="tablist" aria-label="Escolher slide"></div>
+        <button class="hero__toggle" type="button" data-hero-toggle aria-label="Pausar"></button>
+        <button class="hero__arrow" type="button" data-hero-next aria-label="Próximo slide"></button>
+      </div>
+    </section>
+
+    <!-- O melhor do Brasil (abas) -->
+    <section class="section" aria-labelledby="best-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="best-title">O melhor do Brasil</h2>
+          <p class="section-sub">Os queridinhos de quem já se apaixonou pela nossa biodiversidade.</p>
+        </div>
+        <div class="tabs" role="tablist" data-home-tabs>
+          <button class="tab" role="tab" aria-selected="true" data-tab="best">Best-Sellers</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="sale">Promoções</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="rosto">Faciais</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="cabelos">Capilares</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="corpo-banho">Corporais</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="fragrancias">Fragrâncias</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="refil">Refis</button>
+        </div>
+        <div role="tabpanel" data-home-tabpanel></div>
+        <div class="text-center" style="margin-top:24px"><a class="btn btn--outline" href="produtos.html?tag=best-seller" data-tab-link>Ver todos</a></div>
+      </div>
+    </section>
+
+    <!-- Banner calendário -->
+    <section class="section--sm" aria-label="Destaque de presentes">
+      <div class="container">
+        <div class="promo-banner" style="--bg:#FFB175; --fg:#231819" data-reveal>
+          <div class="promo-banner__content">
+            <p class="eyebrow" style="color:#91241E">Presentes de fim de ano</p>
+            <h2 class="promo-banner__title">Presentear é cultivar laços</h2>
+            <p class="promo-banner__text">Kits prontos para presente, embalagem especial e cartão personalizado. Encontre o mimo ideal para cada pessoa.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary" href="produtos.html?cat=presentes">Escolher presentes</a>
+              <a class="btn btn--outline" href="produtos.html?cat=presentes&sub=At%C3%A9%20R%24%20150">Até R$ 150</a>
+            </div>
+          </div>
+          <div class="promo-banner__art" data-scene-target data-scene='{"bg":"#FFB175","c1":"#F25071","c2":"#91241E","leafColor":"#64CE65","product":"BR070"}'></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="cat-title">Navegue por categoria</h2>
+        </div>
+        <div class="cat-grid" data-cat-grid></div>
+      </div>
+    </section>
+
+    <!-- Refil -->
+    <section class="section--sm" aria-label="Promoção de refis">
+      <div class="container">
+        <div class="promo-banner promo-banner--reverse" style="--bg:#64CE65; --fg:#231819" data-reveal>
+          <div class="promo-banner__art" data-scene-target data-scene='{"bg":"#64CE65","c1":"#92BE25","c2":"#FFDF93","leafColor":"#2e7d32","product":"BR080"}'></div>
+          <div class="promo-banner__content">
+            <p class="eyebrow" style="color:#231819">Pequenas grandes ações</p>
+            <h2 class="promo-banner__title">Seu refil favorito com até 15% OFF!</h2>
+            <p class="promo-banner__text">Um gesto simples para reduzir o uso de materiais e dar uma segunda vida às suas embalagens. Use o cupom <strong>REFIL15</strong>.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--dark" href="produtos.html?cat=refil">Descubra os refis</a>
+              <button class="btn btn--outline" type="button" data-copy="REFIL15">Copiar cupom</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novidades -->
+    <section class="section" aria-labelledby="new-title">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <h2 class="section-title" id="new-title">Novidades</h2>
+            <p class="section-sub" style="margin:0">Acabaram de chegar e já estão fazendo sucesso.</p>
+          </div>
+          <a class="link" href="produtos.html?tag=novidade">Ver todas</a>
+        </div>
+        <div data-new-carousel></div>
+      </div>
+    </section>
+
+    <!-- Ingredientes -->
+    <section class="section section--cream" aria-labelledby="ing-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">De norte a sul do país</p>
+          <h2 class="section-title" id="ing-title">Ingredientes da nossa terra</h2>
+          <p class="section-sub">Cada linha nasce de um ingrediente da biodiversidade brasileira, obtido de forma sustentável junto a comunidades locais.</p>
+        </div>
+        <div class="ingredients" data-ingredients></div>
+      </div>
+    </section>
+
+    <!-- Conheça a marca -->
+    <section class="section" aria-labelledby="brand-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="brand-title">Conheça a marca</h2>
+        </div>
+        <div class="content-cards">
+          <article class="content-card" data-reveal>
+            <div class="content-card__art" data-scene-target data-scene='{"bg":"#FBF9F6","c1":"#09C1DA","c2":"#FFB175","leafColor":"#64CE65","product":"BR020","align":"center"}'></div>
+            <div class="content-card__body">
+              <h3 class="content-card__title">Ritual de pele nas lojas</h3>
+              <p>Viva uma consultoria de pele personalizada, seguida do nosso tratamento facial assinatura, em uma loja participante.</p>
+              <a class="link" href="lojas.html">Saiba mais</a>
+            </div>
+          </article>
+          <article class="content-card" data-reveal>
+            <div class="content-card__art" data-scene-target data-scene='{"bg":"#FBF9F6","c1":"#BD4AC6","c2":"#F8AD3F","leafColor":"#92BE25","product":"BR005","align":"center","alt":true}'></div>
+            <div class="content-card__body">
+              <h3 class="content-card__title">Da floresta para você</h3>
+              <p>Trabalhamos com mais de 30 comunidades extrativistas, garantindo renda justa e a floresta em pé.</p>
+              <a class="link" href="sobre.html#ingredientes">Descubra</a>
+            </div>
+          </article>
+          <article class="content-card" data-reveal>
+            <div class="content-card__art" data-scene-target data-scene='{"bg":"#FBF9F6","c1":"#64CE65","c2":"#F25071","leafColor":"#2e7d32","product":"BR081","align":"center"}'></div>
+            <div class="content-card__body">
+              <h3 class="content-card__title">Pequenas grandes ações</h3>
+              <p>Descarte suas embalagens vazias em nossas lojas e garanta ofertas exclusivas na sua próxima compra.</p>
+              <a class="link" href="sobre.html#compromissos">Saiba mais</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compromisso -->
+    <section class="section--sm" aria-labelledby="commit-title">
+      <div class="container">
+        <div class="commitment" data-reveal>
+          <div>
+            <p class="eyebrow" style="color:#FFB175">Orgulho de ser brasileira</p>
+            <h2 id="commit-title">Cultivamos a mudança</h2>
+            <p>Acreditamos em uma economia mais justa, equitativa e regenerativa. Por isso, nossas fórmulas são veganas, nossas embalagens são recicláveis e cada compra apoia quem protege a biodiversidade.</p>
+            <a class="btn btn--light" href="sobre.html#compromissos">Saiba mais</a>
+          </div>
+          <div class="commitment__stats">
+            <div class="commitment__stat"><strong>95%</strong><span>ingredientes de origem natural</span></div>
+            <div class="commitment__stat"><strong>30+</strong><span>comunidades parceiras</span></div>
+            <div class="commitment__stat"><strong>100%</strong><span>fórmulas veganas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vistos recentemente -->
+    <section class="section" aria-labelledby="recent-title" data-recent-section hidden>
+      <div class="container">
+        <div class="section-head section-head--row">
+          <h2 class="section-title" id="recent-title">Vistos recentemente</h2>
+        </div>
+        <div data-recent-carousel></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos | Brasilidades</title>
+  <meta name="description" content="Explore todos os produtos Brasilidades: corpo e banho, fragrâncias, cuidados faciais e capilares, casa, presentes e refis.">
+  <meta name="theme-color" content="#91241E">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Josefin+Sans:wght@300;400;600;700&family=Dosis:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalog">
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="plp-hero" data-plp-hero>
+      <div class="plp-hero__deco" data-plp-deco aria-hidden="true"></div>
+      <div class="container plp-hero__inner">
+        <nav aria-label="Você está em"><ol class="breadcrumb" data-breadcrumb></ol></nav>
+        <h1 data-plp-title>Todos os produtos</h1>
+        <p data-plp-desc></p>
+        <div class="chips plp-subnav" data-plp-subnav></div>
+      </div>
+    </section>
+
+    <div class="container plp">
+      <!-- Filtros -->
+      <aside class="filters" id="filters" aria-label="Filtros">
+        <div class="filters__panel">
+          <div class="filters__head">
+            <h2>Filtrar</h2>
+            <button class="icon-btn" type="button" data-close-filters aria-label="Fechar filtros"></button>
+          </div>
+          <div class="filters__body" data-filters></div>
+          <div class="filters__foot">
+            <button class="btn btn--outline btn--sm" type="button" data-clear-filters>Limpar</button>
+            <button class="btn btn--primary btn--sm" type="button" data-close-filters>Ver resultados</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Resultados -->
+      <section aria-label="Resultados">
+        <div class="plp-toolbar">
+          <button class="btn btn--outline btn--sm filter-toggle" type="button" data-open-filters>Filtrar</button>
+          <p class="plp-toolbar__count" data-count aria-live="polite"></p>
+          <div class="plp-toolbar__right">
+            <label class="sr-only" for="sort">Ordenar por</label>
+            <select id="sort" data-sort>
+              <option value="relevancia">Relevância</option>
+              <option value="mais-vendidos">Mais vendidos</option>
+              <option value="novidades">Novidades</option>
+              <option value="menor-preco">Menor preço</option>
+              <option value="maior-preco">Maior preço</option>
+              <option value="desconto">Maior desconto</option>
+              <option value="avaliacao">Melhor avaliação</option>
+            </select>
+          </div>
+        </div>
+        <div class="active-filters" data-active-filters></div>
+        <div class="product-grid" data-grid></div>
+        <div class="load-more" data-load-more></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/catalog.js"></script>
+</body>
+</html>

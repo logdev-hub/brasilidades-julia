@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fale conosco | Brasilidades</title>
+  <meta name="description" content="Central de atendimento Brasilidades: telefone, WhatsApp, e-mail e perguntas frequentes.">
+  <meta name="theme-color" content="#91241E">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Josefin+Sans:wght@300;400;600;700&family=Dosis:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="inst-hero" style="--bg:#91241E">
+      <div class="inst-hero__deco" data-scene-target data-scene='{"bg":"#91241E","c1":"#CC274E","c2":"#FFB175","leafColor":"#92BE25"}'></div>
+      <div class="container inst-hero__inner">
+        <p class="eyebrow" style="color:#FFDF93">Atendimento</p>
+        <h1>Fale conosco</h1>
+        <p>Estamos aqui para ajudar com pedidos, trocas, produtos e tudo mais que você precisar.</p>
+      </div>
+    </section>
+
+    <div class="container section--sm">
+      <div class="contact-grid">
+        <div class="channels" data-channels></div>
+
+        <form class="panel" data-contact novalidate>
+          <h2 class="panel__title">Envie uma mensagem</h2>
+          <div class="form-row form-row--2">
+            <div class="field"><label for="ct-name">Nome</label><input id="ct-name" name="name" autocomplete="name"></div>
+            <div class="field"><label for="ct-email">E-mail</label><input id="ct-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field"><label for="ct-phone">Telefone <small>(opcional)</small></label><input id="ct-phone" name="phone" data-mask="phone" inputmode="tel"></div>
+            <div class="field"><label for="ct-subject">Assunto</label>
+              <select id="ct-subject" name="subject">
+                <option value="">Selecione</option>
+                <option value="pedido">Meu pedido</option>
+                <option value="troca">Trocas e devoluções</option>
+                <option value="produto">Dúvidas sobre produtos</option>
+                <option value="ritual">Agendar Ritual de Pele</option>
+                <option value="corporativo">Vendas corporativas</option>
+                <option value="franquia">Seja um franqueado</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+          </div>
+          <div class="field" data-order-field hidden><label for="ct-order">Número do pedido</label><input id="ct-order" name="order" placeholder="BRZ00000000"></div>
+          <div class="field"><label for="ct-msg">Mensagem</label><textarea id="ct-msg" name="msg" maxlength="1500"></textarea><small data-msg-count>0/1500</small></div>
+          <label class="check"><input type="checkbox" name="lgpd"><span>Autorizo o uso dos meus dados para retorno deste contato, conforme a <a class="link" href="politicas.html#privacidade">Política de Privacidade</a>.</span></label>
+          <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="section section--cream" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <div class="section-head"><h2 class="section-title" id="faq-title">Perguntas frequentes</h2></div>
+        <div class="faq-search"><label class="sr-only" for="faq-q">Buscar nas perguntas</label><input id="faq-q" type="search" placeholder="Busque sua dúvida…" data-faq-q></div>
+        <div class="accordion" data-faq></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encontre uma loja | Brasilidades</title>
+  <meta name="description" content="Encontre a loja Brasilidades mais próxima: endereços, horários e serviços de beleza.">
+  <meta name="theme-color" content="#91241E">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Josefin+Sans:wght@300;400;600;700&family=Dosis:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stores">
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="inst-hero" style="--bg:#3F2B2E">
+      <div class="inst-hero__deco" data-scene-target data-scene='{"bg":"#3F2B2E","c1":"#91241E","c2":"#FFB175","leafColor":"#64CE65"}'></div>
+      <div class="container inst-hero__inner">
+        <p class="eyebrow" style="color:#FFB175">Nossas lojas</p>
+        <h1>Encontre uma loja</h1>
+        <p>Experimente nossas fragrâncias, receba uma consultoria de pele e retire seus pedidos online sem custo.</p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top:32px">
+      <div class="stores-layout">
+        <aside class="panel stores-filter" aria-label="Filtrar lojas">
+          <h2 class="panel__title">Filtrar</h2>
+          <div class="field"><label for="st-q">Cidade, bairro ou nome</label><input id="st-q" type="search" placeholder="Ex.: São Paulo" data-store-q></div>
+          <div class="field"><label for="st-uf">Estado</label><select id="st-uf" data-store-uf><option value="">Todos os estados</option></select></div>
+          <label class="check"><input type="checkbox" data-store-spa><span>Somente lojas com Ritual de Pele</span></label>
+          <button class="btn btn--outline btn--block btn--sm" type="button" data-store-geo>Usar minha localização</button>
+          <p class="muted" style="font-size:12px;margin-top:12px" data-store-geo-msg></p>
+        </aside>
+        <section aria-label="Lista de lojas">
+          <p class="plp-toolbar__count" data-store-count aria-live="polite"></p>
+          <div class="store-list" data-store-list></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/stores.js"></script>
+</body>
+</html>
